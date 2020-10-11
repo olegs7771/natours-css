@@ -1,28 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from "./logo.svg";
+//Components
+import Home from "../src/components/main/Home";
+
 import "./App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <div className="App">
-            <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Edit <code>src/App.js</code> and save to reload!!.
-              </p>
-            </header>
-          </div>
-        </Switch>
-      </Router>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;
