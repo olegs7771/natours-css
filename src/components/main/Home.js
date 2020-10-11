@@ -15,8 +15,7 @@ class Home extends Component {
             <span className="heading-primary-main">Outdoors</span>
             <span className="heading-primary-sub">is where life happens</span>
           </h1>
-
-          </div>
+    </div>
         </header>
      </div>
     );
