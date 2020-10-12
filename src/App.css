@@ -21,9 +21,9 @@ body {
 .header {
   height: 95vh;
   background-image: linear-gradient(
-      to right bottom,
-      hsla(111, 55%, 64%, 0.801),
-      hsla(160, 64%, 43%, 0.801)
+      to left top,
+      hsla(111, 55%, 64%, 0.712),
+      hsla(160, 64%, 43%, 0.712)
     ),
     url(./img/hero.jpg);
   background-size: cover;
@@ -39,30 +39,118 @@ body {
 }
 .logo {
   height: 35px;
+  animation-name: moveDownLogo;
+  animation-duration: 2s;
 }
 
 .text-box {
   position: absolute;
   top: 35%;
   left: 50%;
-
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 .heading-primary-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+  animation-name: moveToRight;
+  animation-duration: 1s;
+
+  /* animation-delay: 1s; */
+  /* animation-iteration-count: 3; */
+  animation-timing-function: ease-out;
 }
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 17.3px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  animation-name: moveToLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+
+  /* animation-delay: 1s; */
+}
+/* Animation Logo */
+@keyframes moveDownLogo {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Animation Heading */
+@keyframes moveToRight {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveToLeft {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.29);
+}
+.btn:active {
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.29);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  display: inline-block;
 }

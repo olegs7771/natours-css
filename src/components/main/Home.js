@@ -11,13 +11,16 @@ class Home extends Component {
           </div>
 
           <div className="text-box">
-          <h1 className="heading-primary">
-            <span className="heading-primary-main">Outdoors</span>
-            <span className="heading-primary-sub">is where life happens</span>
-          </h1>
-    </div>
+            <h1 className="heading-primary">
+              <span className="heading-primary-main">Outdoors</span>
+              <span className="heading-primary-sub">is where life happens</span>
+            </h1>
+            <a href="#" className="btn btn-white">
+              Discover Our Tours
+            </a>
+          </div>
         </header>
-     </div>
+      </div>
     );
   }
 }
