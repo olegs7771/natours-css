@@ -18,6 +18,7 @@ class Home extends Component {
             <a href="#" className="btn btn-white btn-animated">
               Discover Our Tours
             </a>
+            
           </div>
         </header>
       </div>
