@@ -9,12 +9,15 @@ Dark green: #28b485
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 400;
-  font-size: 16px;
-  line-height: 1.7;
+  font-weight: 400;
+  /* font-size: 1.7; */
+  line-height: 150%;
   color: #777;
   padding: 30px;
 }
@@ -31,6 +34,7 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  padding: 2em;
 }
 .logo-box {
   position: absolute;
