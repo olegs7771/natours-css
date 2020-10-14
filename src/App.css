@@ -64,10 +64,6 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-<<<<<<< HEAD
-  line-height: 2;
-=======
->>>>>>> 53e20090bb08bcd1a56984f5c1f2f3478e83768f
 }
 .heading-primary--main {
   display: block;
@@ -151,11 +147,7 @@ body {
 .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
-<<<<<<< HEAD
-  padding: 1.5rem 4rem;
-=======
   padding: 0.5rem 4rem;
->>>>>>> 53e20090bb08bcd1a56984f5c1f2f3478e83768f
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
