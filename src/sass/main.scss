@@ -1,6 +1,19 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "pages/home";
+
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
 $color-primary-dark: #28b485;
+$color-grey-dark: #383636;
+$color-white: #fff;
 
 *,
 ::after,
@@ -18,7 +31,7 @@ body {
   font-weight: 400;
   /* font-size: 1.7; */
   line-height: 150%;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
@@ -34,55 +47,54 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   padding: 2em;
-}
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.logo {
-  height: 3.5rem;
-  animation-name: moveDownLogo;
-  animation-duration: 2s;
-}
-
-.header__text-box {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  &__logo {
+    height: 4.5rem;
+    animation-name: moveDownLogo;
+    animation-duration: 2s;
+  }
+  &__text-box {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveToRight 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
+  }
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    /* margin-top: 80px; */
+    /* animation-name: moveToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; */
+    animation: moveToLeft 1s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
 }
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation: moveToRight 1s ease-out 0.5s;
-  animation-fill-mode: backwards;
-}
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-  /* margin-top: 80px; */
-  /* animation-name: moveToLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; */
-  animation: moveToLeft 1s ease-out 1s;
-  animation-fill-mode: backwards;
-}
+
 /* Animation Logo */
 @keyframes moveDownLogo {
   0% {
@@ -141,59 +153,61 @@ body {
     transform: translateX(0);
   }
 }
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.5rem 4rem;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem;
-}
-.btn:hover {
-  transform: translateY(-3px);
-  -webkit-box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
-  -moz-box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
-  box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
-}
-.btn:active {
-  transform: translateY(-1px);
-  -webkit-box-shadow: 0px 0.3rem 0.3rem 0px rgba(0, 0, 0, 0.29);
-  -moz-box-shadow: 0px 0.3rem 0.3rem 0px rgba(0, 0, 0, 0.29);
-  box-shadow: 0px 0.3rem 0.3rem 0px rgba(0, 0, 0, 0.29);
-}
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
+    &::after {
+      transform: scaleX(2) scaleY(2);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0px 0.3rem 0.3rem 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 0px 0.3rem 0.3rem 0px rgba(0, 0, 0, 0.29);
+    box-shadow: 0px 0.3rem 0.3rem 0px rgba(0, 0, 0, 0.29);
+  }
 
-.btn--white {
-  background-color: #fff;
-  color: #777;
-  display: inline-block;
-}
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    display: inline-block;
+    &::after {
+      background-color: $color-white;
+    }
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
-.btn-white::after {
-  background-color: #fff;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(2);
-  opacity: 0;
-}
-.btn--animated {
-  animation: moveUpBtn 1s ease-out 1s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: moveUpBtn 1s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
 }
 
 .contacts {
