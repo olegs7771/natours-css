@@ -1,0 +1,57 @@
+@keyframes moveDownLogo {
+  0% {
+    opacity: 0;
+    transform: translateY(-5rem) rotate(180deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+/* Animation Btn */
+@keyframes moveUpBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+
+/* Animation Heading */
+@keyframes moveToRight {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveToLeft {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
