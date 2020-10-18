@@ -1,4 +1,49 @@
 .composition {
+  position: relative;
+
   &__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 1rem rgba($color-black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: 0.2s all;
+    outline-offset: 2rem;
+
+    &--p1 {
+      top: -10px;
+      left: 0px;
+    }
+
+    &--p2 {
+      top: 3rem;
+      left: 18rem;
+    }
+    &--p3 {
+      top: 12rem;
+      left: 7rem;
+    }
+    &--p1:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.1) translateY(0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
+      z-index: 1;
+    }
+    &--p2:hover {
+      outline: 1.5rem solid $color-primary;
+      transform: scale(1.1) translateY(0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
+      z-index: 1;
+    }
+    &--p3:hover {
+      outline: 1.5rem solid $color-primary;
+
+      transform: scale(1.1) translateY(0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.4);
+      z-index: 1;
+    }
+  }
+  //decrease images that are not been hovered
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
   }
 }

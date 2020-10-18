@@ -59,22 +59,39 @@ class Home extends Component {
                   <img
                     src={nat1largeImg}
                     alt="photo-1"
-                    className="composition__photo composition_photo-p1"
+                    className="composition__photo composition__photo--p1"
                   />
                   <img
                     src={nat2largeImg}
                     alt="photo-2"
-                    className="composition__photo composition_photo-p2"
+                    className="composition__photo composition__photo--p2"
                   />
                   <img
                     src={nat3largeImg}
                     alt="photo-3"
-                    className="composition__photo composition_photo-p3"
+                    className="composition__photo composition__photo--p3"
                   />
                 </div>
               </div>
             </div>
           </section>
+          <div className="section section-features">
+            <i className="icon-basic-world"></i>
+          </div>
+
+          {/* <section className="section-tours ">
+          <div className="u-center-text u-margin-bottom-big">
+              <h2 className="heading-secondary">
+                Most popular tours
+              </h2>
+          </div>
+          <div className="row">
+            <div className="col-1-of-3">Col 1 of 3</div>
+            <div className="col-1-of-3">Col 1 of 3</div>
+            <div className="col-1-of-3">Col 1 of 3</div>
+          </div>
+
+          </section> */}
         </main>
 
         {/* <section className="grid-test">
