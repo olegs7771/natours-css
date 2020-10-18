@@ -75,9 +75,20 @@ class Home extends Component {
               </div>
             </div>
           </section>
-          <div className="section section-features">
-            <i className="icon-basic-world"></i>
-          </div>
+          <section className="section-features">
+            <div className="row">
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className=" feature-box__icon icon-basic-world"></i>
+                  <h3 className="heading-tertiary">Explore the world</h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
 
           {/* <section className="section-tours ">
           <div className="u-center-text u-margin-bottom-big">

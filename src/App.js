@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "../src/components/main/Home";
 
 import "./sass/main.scss";
+import "./icon-font.css";
 
 const App = () => {
   return (
