@@ -80,7 +80,9 @@ class Home extends Component {
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="  icon-basic-world feature-box__icon"></i>
-                  <h3 className="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Explore the world
+                  </h3>
                   <p className="featur-box__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Eligendi, explicabo.
@@ -90,7 +92,9 @@ class Home extends Component {
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="  icon-basic-compass feature-box__icon"></i>
-                  <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Meet nature
+                  </h3>
                   <p className="featur-box__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Eligendi, explicabo.
@@ -100,7 +104,9 @@ class Home extends Component {
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="  icon-basic-map feature-box__icon"></i>
-                  <h3 className="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Find your way
+                  </h3>
                   <p className="featur-box__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Eligendi, explicabo.
@@ -110,7 +116,9 @@ class Home extends Component {
               <div className="col-1-of-4">
                 <div className="feature-box">
                   <i className="  icon-basic-heart feature-box__icon"></i>
-                  <h3 className="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Live a healthier life
+                  </h3>
                   <p className="featur-box__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Eligendi, explicabo.
@@ -121,21 +129,21 @@ class Home extends Component {
           </section>
 
           <section className="section-tours ">
-          <div className="u-center-text u-margin-bottom-big">
-              <h2 className="heading-secondary">
-                Most popular tours
-              </h2>
-          </div>
-          <div className="row">
-            <div className="col-1-of-3">
-              <div className="card">
-                Card
-              </div>
+            <div className="u-center-text u-margin-bottom-big">
+              <h2 className="heading-secondary">Most popular tours</h2>
             </div>
-            <div className="col-1-of-3">Col 1 of 3</div>
-            <div className="col-1-of-3">Col 1 of 3</div>
-          </div>
-
+            <div className="row">
+              <div className="col-1-of-3">
+                <div className="card">
+                  <div className="card__side card__side--front">Front</div>
+                </div>
+                <div className="card">
+                  <div className="card__side card__side--back">Back</div>
+                </div>
+              </div>
+              <div className="col-1-of-3">Col 1 of 3</div>
+              <div className="col-1-of-3">Col 1 of 3</div>
+            </div>
           </section>
         </main>
 
