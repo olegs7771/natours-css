@@ -4,10 +4,26 @@
   padding: 2.5rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  line-height: 1.5;
+
+  box-shadow: 0px 1.5rem 1.4rem -1.6rem rgba($color-black, 0.75);
+  transition: 0.3s;
 
   &__icon {
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+    background-clip: text;
+
+    color: transparent;
   }
-  &__text {
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0px 1.5rem 2.4rem -0.6rem rgba($color-black, 0.75);
   }
 }

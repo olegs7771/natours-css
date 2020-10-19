@@ -58,17 +58,17 @@ class Home extends Component {
                 <div className="composition">
                   <img
                     src={nat1largeImg}
-                    alt="photo-1"
+                    alt="nat-1"
                     className="composition__photo composition__photo--p1"
                   />
                   <img
                     src={nat2largeImg}
-                    alt="photo-2"
+                    alt="nat-2"
                     className="composition__photo composition__photo--p2"
                   />
                   <img
                     src={nat3largeImg}
-                    alt="photo-3"
+                    alt="nat-3"
                     className="composition__photo composition__photo--p3"
                   />
                 </div>
@@ -79,8 +79,38 @@ class Home extends Component {
             <div className="row">
               <div className="col-1-of-4">
                 <div className="feature-box">
-                  <i className=" feature-box__icon icon-basic-world"></i>
-                  <h3 className="heading-tertiary">Explore the world</h3>
+                  <i className="  icon-basic-world feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">Explore the world</h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className="  icon-basic-compass feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className="  icon-basic-map feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">Find your way</h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className="  icon-basic-heart feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
                   <p className="featur-box__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Eligendi, explicabo.
@@ -90,19 +120,23 @@ class Home extends Component {
             </div>
           </section>
 
-          {/* <section className="section-tours ">
+          <section className="section-tours ">
           <div className="u-center-text u-margin-bottom-big">
               <h2 className="heading-secondary">
                 Most popular tours
               </h2>
           </div>
           <div className="row">
-            <div className="col-1-of-3">Col 1 of 3</div>
+            <div className="col-1-of-3">
+              <div className="card">
+                Card
+              </div>
+            </div>
             <div className="col-1-of-3">Col 1 of 3</div>
             <div className="col-1-of-3">Col 1 of 3</div>
           </div>
 
-          </section> */}
+          </section>
         </main>
 
         {/* <section className="grid-test">
