@@ -31,7 +31,7 @@
     text-transform: uppercase;
     color: $color-white;
     position: absolute;
-    top: 12rem;
+    top: 15rem;
     right: 2rem;
     text-align: right;
     width: 70%;
@@ -48,16 +48,35 @@
       );
     }
   }
+  &__details {
+    padding-top: 4rem;
+    line-height: 1.5;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 0.5px solid $color-grey-light;
+        }
+      }
+    }
+  }
 
   ///////////////////////////////////////////////////////////////
 
   // CARD FUNCTIONALITY
-  height: 50rem;
+  height: 52rem;
   perspective: 150rem;
   -moz-perspective: 150rem;
 
   // position: relative;
   &__side {
+    height: 52rem;
     border-radius: 3px;
     overflow: hidden;
     transition: 1s ease;
@@ -67,7 +86,6 @@
     left: 0;
     width: 100%;
     backface-visibility: hidden;
-    height: 50rem;
 
     &--front {
       background-color: $color-white;
