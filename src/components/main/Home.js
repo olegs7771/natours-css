@@ -148,10 +148,10 @@ class Home extends Component {
                     <div className="card__details">
                       <ul>
                         <li>3 days tours</li>
-                        <li> Up to 30 people</li>
-                        <li> 2 tour guides</li>
-                        <li>Sleep in cozy hotels </li>
-                        <li>Difficulty:easy</li>
+                        <li>Up to 30 people</li>
+                        <li>2 tour guides</li>
+                        <li>Sleep in cozy hotels</li>
+                        <li>Difficulty: easy</li>
                       </ul>
                     </div>
                   </div>
@@ -259,6 +259,7 @@ class Home extends Component {
             </div>
           </section>
         </main>
+        
 
         {/* <section className="grid-test">
           <div className="row">
