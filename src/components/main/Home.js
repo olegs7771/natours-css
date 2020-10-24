@@ -252,9 +252,10 @@ class Home extends Component {
             <div className="row">
               <div className="story">
                 <figure className="story__shape">image</figure>
-                <h3 className="heading-tertiary">
+                <h3 className="heading-tertiary margin">
                   I had the best week ever with my family
                 </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur a quos minima natus illum officia delectus quod! Nulla, ratione!</p>
               </div>
             </div>
           </section>
