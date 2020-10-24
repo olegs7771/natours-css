@@ -3,6 +3,7 @@ import logo from "../../img/logo-white.png";
 import nat1largeImg from "../../img/nat-1-large.jpg";
 import nat2largeImg from "../../img/nat-2-large.jpg";
 import nat3largeImg from "../../img/nat-3-large.jpg";
+import nat8Img from "../../img/nat-8.jpg";
 
 class Home extends Component {
   render() {
@@ -251,16 +252,29 @@ class Home extends Component {
             </div>
             <div className="row">
               <div className="story">
-                <figure className="story__shape">image</figure>
-                <h3 className="heading-tertiary margin">
+                <figure className="story__shape">
+                  <img src={nat8Img} alt="nat-8" className="story__image" />
+                  <figcaption className="story__caption">Mary Smith</figcaption>
+                </figure>
+                <h3 className="heading-tertiary u-margin-bottom-small">
                   I had the best week ever with my family
                 </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur a quos minima natus illum officia delectus quod! Nulla, ratione!</p>
+                <p className="story__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sed consequatur a quos minima natus illum
+                  officia delectus quod! Nulla, ratione! Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sed consequatur a quos
+                  minima natus illum officia delectus quod! Nulla, ratione!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione!
+                </p>
               </div>
             </div>
           </section>
         </main>
-        
 
         {/* <section className="grid-test">
           <div className="row">
