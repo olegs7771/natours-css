@@ -1,6 +1,8 @@
 .card {
   //CARD SIDES STYLES
 
+  //FRONTSIDE OF THE CARD
+
   //PICTURE
   &__picture {
     background-size: cover;
@@ -17,11 +19,23 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
+
     &--2 {
-      background-image: url(../../img/nat-6.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(../../img/nat-6.jpg);
     }
+
     &--3 {
-      background-image: url(../../img/nat-7.jpg);
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(../../img/nat-7.jpg);
     }
   }
   //HEADING
@@ -47,6 +61,65 @@
         rgba($color-secondary-dark, 0.8)
       );
     }
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)
+      );
+    }
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8)
+      );
+    }
+  }
+  .card__details {
+    ul {
+      width: 80%;
+      margin: 0 auto;
+      list-style: none;
+      margin-top: 4rem;
+
+      li {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 2.4;
+        font-size: 1.6rem;
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light;
+        }
+      }
+    }
+  }
+
+  //BACKSIDE OF THE CARD
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); //50% of element
+    height: 30rem;
+
+    width: 90%;
+    text-align: center;
+  }
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 7rem;
+  }
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
+    margin-bottom: 10rem;
   }
 
   ///////////////////////////////////////////////////////////////
@@ -68,12 +141,12 @@
     width: 100%;
     backface-visibility: hidden;
     height: 50rem;
+    box-shadow: 0px 1rem 3.7rem -1rem rgba(0, 0, 0, 0.75);
 
     &--front {
       background-color: $color-white;
     }
     &--back {
-      background-color: green;
       //already rotated 180deg
       transform: rotateY(180deg);
 
@@ -83,7 +156,20 @@
           $color-secondary-light,
           $color-secondary-dark
         );
-        // background-image: url(../../img/hero.jpg);
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
       }
     }
   }

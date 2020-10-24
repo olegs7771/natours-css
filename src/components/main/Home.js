@@ -132,7 +132,10 @@ class Home extends Component {
             <div className="u-center-text u-margin-bottom-big">
               <h2 className="heading-secondary">Most popular tours</h2>
             </div>
+
+            {/* TOUR CARDS */}
             <div className="row">
+              {/* FIRST CARD */}
               <div className="col-1-of-3">
                 <div className="card">
                   <div className="card__side card__side--front">
@@ -153,12 +156,106 @@ class Home extends Component {
                     </div>
                   </div>
                   <div className="card__side card__side--back card__side--back-1">
-                    Back
+                    <div className="card__cta">
+                      <div className="card__price-box">
+                        <p className="card__price-only">Only</p>
+                        <p className="card__price-value">$297</p>
+                      </div>
+                      <a href="#" className="btn btn--white">
+                        book now!
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col-1-of-3">Col 1 of 3</div>
-              <div className="col-1-of-3">Col 1 of 3</div>
+
+              {/* SECOND CARD */}
+              <div className="col-1-of-3">
+                <div className="card">
+                  <div className="card__side card__side--front">
+                    <div className="card__picture card__picture--2"></div>
+                    <h4 className="card__heading">
+                      <span className="card__heading-span card__heading-span--2">
+                        the forest hiker
+                      </span>
+                    </h4>
+                    <div className="card__details">
+                      <ul>
+                        <li>3 days tours</li>
+                        <li> Up to 30 people</li>
+                        <li> 2 tour guides</li>
+                        <li>Sleep in cozy hotels </li>
+                        <li>Difficulty:easy</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card__side card__side--back card__side--back-2">
+                    <div className="card__cta">
+                      <div className="card__price-box">
+                        <p className="card__price-only">Only</p>
+                        <p className="card__price-value">$297</p>
+                      </div>
+                      <a href="#" className="btn btn--white">
+                        book now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* THIRD CARD */}
+              <div className="col-1-of-3">
+                <div className="card">
+                  <div className="card__side card__side--front">
+                    <div className="card__picture card__picture--3"></div>
+                    <h4 className="card__heading">
+                      <span className="card__heading-span card__heading-span--3">
+                        the snow adventurer
+                      </span>
+                    </h4>
+                    <div className="card__details">
+                      <ul>
+                        <li>3 days tours</li>
+                        <li> Up to 30 people</li>
+                        <li> 2 tour guides</li>
+                        <li>Sleep in cozy hotels </li>
+                        <li>Difficulty:easy</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card__side card__side--back card__side--back-3">
+                    <div className="card__cta">
+                      <div className="card__price-box">
+                        <p className="card__price-only">Only</p>
+                        <p className="card__price-value">$297</p>
+                      </div>
+                      <a href="#" className="btn btn--white">
+                        book now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="u-center-text u-margin-top-big">
+              <a href="#" className="btn btn--green">
+                Discover all tours
+              </a>
+            </div>
+          </section>
+          <section className="section-stories">
+            <div className="u-center-text u-margin-bottom-big">
+              <h2 className="heading-secondary">
+                we make people genuinely happy
+              </h2>
+            </div>
+            <div className="row">
+              <div className="story">
+                <figure className="story__shape">image</figure>
+                <h3 className="heading-tertiary">
+                  I had the best week ever with my family
+                </h3>
+              </div>
             </div>
           </section>
         </main>

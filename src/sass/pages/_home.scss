@@ -6,7 +6,7 @@
 
 .section-features {
   margin-top: -10vh;
-  height: 95vh;
+  height: 60vh;
   padding: 20rem 0;
   background-image: linear-gradient(
       to left top,
@@ -27,6 +27,12 @@
 
 .section-tours {
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
+  padding: 20rem 0 10rem 0;
   margin-top: -10vh;
+  line-height: 6rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  background-color: $color-grey-light-1;
 }
