@@ -334,11 +334,11 @@ class Home extends Component {
             </div>
 
                   <div className="form__group">
-                   <input type="text" className='form__input' placeholder="Full Name" id="name"/>
+                   <input type="text" className='form__input' placeholder="Full Name" id="name" required/>
                    <label htmlFor="name" className='form__label'>Full Name</label>
                   </div>
                   <div className="form__group">
-                   <input type="email" className='form__input' placeholder="Email" id="email"/>
+                   <input type="email" className='form__input' placeholder="Email" id="email" required/>
                    <label htmlFor="email" className='form__label'>Email</label>
                   </div>
 
