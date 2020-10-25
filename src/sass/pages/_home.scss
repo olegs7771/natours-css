@@ -39,7 +39,8 @@
 }
 
 .section-book {
-  padding: 15rem 0;
+  // border: 1px solid red;
+  padding: 15rem;
   background-image: linear-gradient(
     to right bottom,
     $color-primary-light,
@@ -47,10 +48,20 @@
   );
 }
 .book {
-  background-image: url(../../img/nat-10.jpg);
-  background-size: cover;
+  background-image: linear-gradient(
+      110deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../../img/nat-10.jpg);
+  background-size: 100%;
   border-radius: 3px;
   height: 50rem;
   box-shadow: 0px 21px 47px -3px rgba(0, 0, 0, 0.75);
-  display: block;
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
 }

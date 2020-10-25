@@ -27,6 +27,8 @@
           $color-primary-dark
         ),
         url(../../img/nat-6.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
 
     &--3 {
@@ -36,6 +38,8 @@
           $color-tertiary-dark
         ),
         url(../../img/nat-7.jpg);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
   }
   //HEADING
