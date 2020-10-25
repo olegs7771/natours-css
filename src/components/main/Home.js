@@ -4,6 +4,7 @@ import nat1largeImg from "../../img/nat-1-large.jpg";
 import nat2largeImg from "../../img/nat-2-large.jpg";
 import nat3largeImg from "../../img/nat-3-large.jpg";
 import nat8Img from "../../img/nat-8.jpg";
+import nat9Img from "../../img/nat-9.jpg";
 
 class Home extends Component {
   render() {
@@ -272,6 +273,32 @@ class Home extends Component {
                   Nulla, ratione!
                 </p>
               </div>
+              <div className="story">
+                <figure className="story__shape">
+                  <img src={nat9Img} alt="nat-9" className="story__image" />
+                  <figcaption className="story__caption">John Brown</figcaption>
+                </figure>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  I had the best week ever with my family
+                </h3>
+                <p className="story__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sed consequatur a quos minima natus illum
+                  officia delectus quod! Nulla, ratione! Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sed consequatur a quos
+                  minima natus illum officia delectus quod! Nulla, ratione!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione!
+                </p>
+              </div>
+            </div>
+            <div className="u-center-text u-margin-top-big">
+              <a href="#" className=" btn-text">
+                Read the all stories &rarr;
+              </a>
             </div>
           </section>
         </main>

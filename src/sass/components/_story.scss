@@ -49,9 +49,13 @@
   }
   &:hover &__image {
     transform: translateX(-3rem) scale(1);
-    filter: blur(2px);
+    filter: blur(2px) brightness(60%);
   }
   &:hover &__shape {
     overflow: hidden;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
