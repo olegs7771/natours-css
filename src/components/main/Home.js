@@ -6,7 +6,7 @@ import nat_3_lg_img from "../../img/nat-3-large.jpg";
 import nat_8_person_img from "../../img/nat-8.jpg";
 import nat_9_person_img from "../../img/nat-9.jpg";
 import bg_video_pm4 from "../../video/video.mp4";
-import bg_video_webm from "../../video/video.webm";
+// import bg_video_webm from "../../video/video.webm";
 
 class Home extends Component {
   render() {
@@ -324,6 +324,9 @@ class Home extends Component {
                 Read the all stories &rarr;
               </a>
             </div>
+          </section>
+          <section className="section-book">
+            <div className="book">Image</div>
           </section>
         </main>
 
