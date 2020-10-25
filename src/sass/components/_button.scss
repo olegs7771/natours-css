@@ -10,6 +10,20 @@
     font-size: $default-font-size;
     font-weight: 700;
   }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
   &:hover {
     transform: translateY(-3px);
     -webkit-box-shadow: 0px 1rem 1rem 0px rgba(0, 0, 0, 0.29);
@@ -35,18 +49,13 @@
       background-color: $color-white;
     }
   }
-
-  &::after {
-    content: "";
+  &--green {
+    background-color: $color-primary-light;
+    color: $color-white;
     display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
+    &::after {
+      background-color: $color-primary-light;
+    }
   }
 
   &--animated {
@@ -62,14 +71,16 @@
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $color-primary;
-    padding: 3px;
-    transition: 1s all;
+    padding: 0 6px;
+    transition: 0.3s all;
   }
   &:hover {
     background-color: $color-primary;
     color: $color-white;
     transform: translateY(-3px);
     box-shadow: 0px 13px 9px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    padding: 0 1rem;
   }
   &:active {
     transform: translateY(-3px);

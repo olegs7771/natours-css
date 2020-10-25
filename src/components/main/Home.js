@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import logo from "../../img/logo-white.png";
-import nat1largeImg from "../../img/nat-1-large.jpg";
-import nat2largeImg from "../../img/nat-2-large.jpg";
-import nat3largeImg from "../../img/nat-3-large.jpg";
+import nat_1_lg_img from "../../img/nat-1-large.jpg";
+import nat_2_lg_img from "../../img/nat-2-large.jpg";
+import nat_3_lg_img from "../../img/nat-3-large.jpg";
+import nat_8_person_img from "../../img/nat-8.jpg";
+import nat_9_person_img from "../../img/nat-9.jpg";
+import bg_video_pm4 from "../../video/video.mp4";
+import bg_video_webm from "../../video/video.webm";
 
 class Home extends Component {
   render() {
@@ -57,18 +61,18 @@ class Home extends Component {
               <div className="col-1-of-2 ">
                 <div className="composition">
                   <img
-                    src={nat1largeImg}
-                    alt="photo-1"
+                    src={nat_1_lg_img}
+                    alt="nat-1"
                     className="composition__photo composition__photo--p1"
                   />
                   <img
-                    src={nat2largeImg}
-                    alt="photo-2"
+                    src={nat_2_lg_img}
+                    alt="nat-2"
                     className="composition__photo composition__photo--p2"
                   />
                   <img
-                    src={nat3largeImg}
-                    alt="photo-3"
+                    src={nat_3_lg_img}
+                    alt="nat-3"
                     className="composition__photo composition__photo--p3"
                   />
                 </div>
@@ -79,8 +83,46 @@ class Home extends Component {
             <div className="row">
               <div className="col-1-of-4">
                 <div className="feature-box">
-                  <i className=" feature-box__icon icon-basic-world"></i>
-                  <h3 className="heading-tertiary">Explore the world</h3>
+                  <i className="  icon-basic-world feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Explore the world
+                  </h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className="  icon-basic-compass feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Meet nature
+                  </h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className="  icon-basic-map feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Find your way
+                  </h3>
+                  <p className="featur-box__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Eligendi, explicabo.
+                  </p>
+                </div>
+              </div>
+              <div className="col-1-of-4">
+                <div className="feature-box">
+                  <i className="  icon-basic-heart feature-box__icon"></i>
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    Live a healthier life
+                  </h3>
                   <p className="featur-box__text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Eligendi, explicabo.
@@ -90,19 +132,199 @@ class Home extends Component {
             </div>
           </section>
 
-          {/* <section className="section-tours ">
-          <div className="u-center-text u-margin-bottom-big">
-              <h2 className="heading-secondary">
-                Most popular tours
-              </h2>
-          </div>
-          <div className="row">
-            <div className="col-1-of-3">Col 1 of 3</div>
-            <div className="col-1-of-3">Col 1 of 3</div>
-            <div className="col-1-of-3">Col 1 of 3</div>
-          </div>
+          <section className="section-tours ">
+            <div className="u-center-text u-margin-bottom-big">
+              <h2 className="heading-secondary">Most popular tours</h2>
+            </div>
 
-          </section> */}
+            {/* TOUR CARDS */}
+            <div className="row">
+              {/* FIRST CARD */}
+              <div className="col-1-of-3">
+                <div className="card">
+                  <div className="card__side card__side--front">
+                    <div className="card__picture card__picture--1"></div>
+                    <h4 className="card__heading">
+                      <span className="card__heading-span card__heading-span--1">
+                        the sea explorer
+                      </span>
+                    </h4>
+                    <div className="card__details">
+                      <ul>
+                        <li>3 days tours</li>
+                        <li>Up to 30 people</li>
+                        <li>2 tour guides</li>
+                        <li>Sleep in cozy hotels</li>
+                        <li>Difficulty: easy</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card__side card__side--back card__side--back-1">
+                    <div className="card__cta">
+                      <div className="card__price-box">
+                        <p className="card__price-only">Only</p>
+                        <p className="card__price-value">$297</p>
+                      </div>
+                      <a href="#" className="btn btn--white">
+                        book now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* SECOND CARD */}
+              <div className="col-1-of-3">
+                <div className="card">
+                  <div className="card__side card__side--front">
+                    <div className="card__picture card__picture--2"></div>
+                    <h4 className="card__heading">
+                      <span className="card__heading-span card__heading-span--2">
+                        the forest hiker
+                      </span>
+                    </h4>
+                    <div className="card__details">
+                      <ul>
+                        <li>3 days tours</li>
+                        <li> Up to 30 people</li>
+                        <li> 2 tour guides</li>
+                        <li>Sleep in cozy hotels </li>
+                        <li>Difficulty:easy</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card__side card__side--back card__side--back-2">
+                    <div className="card__cta">
+                      <div className="card__price-box">
+                        <p className="card__price-only">Only</p>
+                        <p className="card__price-value">$297</p>
+                      </div>
+                      <a href="#" className="btn btn--white">
+                        book now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* THIRD CARD */}
+              <div className="col-1-of-3">
+                <div className="card">
+                  <div className="card__side card__side--front">
+                    <div className="card__picture card__picture--3"></div>
+                    <h4 className="card__heading">
+                      <span className="card__heading-span card__heading-span--3">
+                        the snow adventurer
+                      </span>
+                    </h4>
+                    <div className="card__details">
+                      <ul>
+                        <li>3 days tours</li>
+                        <li> Up to 30 people</li>
+                        <li> 2 tour guides</li>
+                        <li>Sleep in cozy hotels </li>
+                        <li>Difficulty:easy</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card__side card__side--back card__side--back-3">
+                    <div className="card__cta">
+                      <div className="card__price-box">
+                        <p className="card__price-only">Only</p>
+                        <p className="card__price-value">$297</p>
+                      </div>
+                      <a href="#" className="btn btn--white">
+                        book now!
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="u-center-text u-margin-top-big">
+              <a href="#" className="btn btn--green">
+                Discover all tours
+              </a>
+            </div>
+          </section>
+          <section className="section-stories">
+            <div className="bg-video">
+              <video
+                src={bg_video_pm4}
+                type="vodeo/mp4"
+                className="bg-video__content"
+                autoPlay
+                muted
+                loop
+              >
+                {/* <source src={bg_video_pm4} type="vodeo/mp4" />
+                <source src={bg_video_webm} type="vodeo/mp4" /> */}
+                Your browser not support video
+              </video>
+            </div>
+            <div className="u-center-text u-margin-bottom-big">
+              <h2 className="heading-secondary">
+                we make people genuinely happy
+              </h2>
+            </div>
+            <div className="row">
+              <div className="story">
+                <figure className="story__shape">
+                  <img
+                    src={nat_8_person_img}
+                    alt="nat-8"
+                    className="story__image"
+                  />
+                  <figcaption className="story__caption">Mary Smith</figcaption>
+                </figure>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  I had the best week ever with my family
+                </h3>
+                <p className="story__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sed consequatur a quos minima natus illum
+                  officia delectus quod! Nulla, ratione! Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sed consequatur a quos
+                  minima natus illum officia delectus quod! Nulla, ratione!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione!
+                </p>
+              </div>
+              <div className="story">
+                <figure className="story__shape">
+                  <img
+                    src={nat_9_person_img}
+                    alt="nat-9"
+                    className="story__image"
+                  />
+                  <figcaption className="story__caption">John Brown</figcaption>
+                </figure>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  I had the best week ever with my family
+                </h3>
+                <p className="story__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Sed consequatur a quos minima natus illum
+                  officia delectus quod! Nulla, ratione! Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Sed consequatur a quos
+                  minima natus illum officia delectus quod! Nulla, ratione!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                  consequatur a quos minima natus illum officia delectus quod!
+                  Nulla, ratione!
+                </p>
+              </div>
+            </div>
+            <div className="u-center-text ">
+              <a href="#" className=" btn-text">
+                Read the all stories &rarr;
+              </a>
+            </div>
+          </section>
         </main>
 
         {/* <section className="grid-test">
