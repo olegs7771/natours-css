@@ -3,7 +3,8 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 2rem 4.7rem -2.6rem rgba(0, 0, 0, 0.75);
-  background-color: $color-white;
+  // background-color: $color-white;
+  background-color: rgba($color-white, 0.5);
   border-radius: 3px;
   padding: 5rem;
   font-size: $default-font-size;

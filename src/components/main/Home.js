@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import logo from "../../img/logo-white.png";
-import nat1largeImg from "../../img/nat-1-large.jpg";
-import nat2largeImg from "../../img/nat-2-large.jpg";
-import nat3largeImg from "../../img/nat-3-large.jpg";
-import nat8Img from "../../img/nat-8.jpg";
-import nat9Img from "../../img/nat-9.jpg";
+import nat_1_lg_img from "../../img/nat-1-large.jpg";
+import nat_2_lg_img from "../../img/nat-2-large.jpg";
+import nat_3_lg_img from "../../img/nat-3-large.jpg";
+import nat_8_person_img from "../../img/nat-8.jpg";
+import nat_9_person_img from "../../img/nat-9.jpg";
+import bg_video_pm4 from "../../video/video.mp4";
+import bg_video_webm from "../../video/video.webm";
 
 class Home extends Component {
   render() {
@@ -59,17 +61,17 @@ class Home extends Component {
               <div className="col-1-of-2 ">
                 <div className="composition">
                   <img
-                    src={nat1largeImg}
+                    src={nat_1_lg_img}
                     alt="nat-1"
                     className="composition__photo composition__photo--p1"
                   />
                   <img
-                    src={nat2largeImg}
+                    src={nat_2_lg_img}
                     alt="nat-2"
                     className="composition__photo composition__photo--p2"
                   />
                   <img
-                    src={nat3largeImg}
+                    src={nat_3_lg_img}
                     alt="nat-3"
                     className="composition__photo composition__photo--p3"
                   />
@@ -246,6 +248,20 @@ class Home extends Component {
             </div>
           </section>
           <section className="section-stories">
+            <div className="bg-video">
+              <video
+                src={bg_video_pm4}
+                type="vodeo/mp4"
+                className="bg-video__content"
+                autoPlay
+                muted
+                loop
+              >
+                {/* <source src={bg_video_pm4} type="vodeo/mp4" />
+                <source src={bg_video_webm} type="vodeo/mp4" /> */}
+                Your browser not support video
+              </video>
+            </div>
             <div className="u-center-text u-margin-bottom-big">
               <h2 className="heading-secondary">
                 we make people genuinely happy
@@ -254,7 +270,11 @@ class Home extends Component {
             <div className="row">
               <div className="story">
                 <figure className="story__shape">
-                  <img src={nat8Img} alt="nat-8" className="story__image" />
+                  <img
+                    src={nat_8_person_img}
+                    alt="nat-8"
+                    className="story__image"
+                  />
                   <figcaption className="story__caption">Mary Smith</figcaption>
                 </figure>
                 <h3 className="heading-tertiary u-margin-bottom-small">
@@ -275,7 +295,11 @@ class Home extends Component {
               </div>
               <div className="story">
                 <figure className="story__shape">
-                  <img src={nat9Img} alt="nat-9" className="story__image" />
+                  <img
+                    src={nat_9_person_img}
+                    alt="nat-9"
+                    className="story__image"
+                  />
                   <figcaption className="story__caption">John Brown</figcaption>
                 </figure>
                 <h3 className="heading-tertiary u-margin-bottom-small">
@@ -295,7 +319,7 @@ class Home extends Component {
                 </p>
               </div>
             </div>
-            <div className="u-center-text u-margin-top-big">
+            <div className="u-center-text ">
               <a href="#" className=" btn-text">
                 Read the all stories &rarr;
               </a>
