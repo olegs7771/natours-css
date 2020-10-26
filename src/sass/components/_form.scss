@@ -1,17 +1,18 @@
 .form {
   &__group:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   &__input {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: inherit;
     color: inherit;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba($color-white, 0.5);
+    background-color: rgba($color-white, 0.9);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 100%;
+    width: 90%;
+    display: block;
 
     &:focus {
       outline: none;
@@ -21,10 +22,28 @@
 
     &::-webkit-input-placeholder {
       color: $color-grey-dark-2;
-      // color: green;
+    }
+    //Validation
+    &:focus:invalid {
+      border-bottom: 3px solid $color-secondary-dark;
     }
   }
 
   &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  //Effect placeholder slides down
+  // + adjust siblings
+  // ~ if there more siblings between
+  &__input:placeholder-shown + &__label {
+    opacity: 0; // to use animation
+    visibility: hidden;
+    transform: translateY(-4rem);
   }
 }
