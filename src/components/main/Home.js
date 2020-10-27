@@ -404,47 +404,50 @@ class Home extends Component {
             <img src={logo_big_X2} alt="logo" className="footer__logo" />
           </div>
           <div className="row">
-            <div className="col-1-of2">
+            <div className="col-1-of-2">
               <div className="footer__navigation">
                 <ul className="footer__list">
                   <li className="footer__item">
-                    <a href="#" className="footer_link">
+                    <a href="#" className="footer__link">
                       Company
                     </a>
                   </li>
                   <li className="footer__item">
-                    <a href="#" className="footer_link">
+                    <a href="#" className="footer__link">
                       Contacts
                     </a>
                   </li>
                   <li className="footer__item">
-                    <a href="#" className="footer_link">
+                    <a href="#" className="footer__link">
                       Careers
                     </a>
                   </li>
                   <li className="footer__item">
-                    <a href="#" className="footer_link">
+                    <a href="#" className="footer__link">
                       Privacy policy
                     </a>
                   </li>
                   <li className="footer__item">
-                    <a href="#" className="footer_link">
+                    <a href="#" className="footer__link">
                       Terms
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-1-of2">
+            <div className="col-1-of-2">
               <p className="footer__copyright">
                 Built by{" "}
                 <a href="#" className="footer__link">
-                  Oleg Smushkevich
+                  Oleg Smushkevich.
                 </a>{" "}
-                to be included in the main Portfolio{" "}
+                To be included in the {" "}
                 <a href="#" className="footer__link">
                   Main Portfolio
-                </a>
+                </a>. 
+                <br/>
+                <br/>
+             Copyright &copy; by Oleg Smushkevich
               </p>
             </div>
           </div>
