@@ -82,8 +82,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
+      transition: opacity 0.2s;
     }
   }
+  //find sibling ~ then child of this sibling and modify element::after
   &__radio-input:checked ~ &__radio-label &__radio-button::after {
     opacity: 1;
   }

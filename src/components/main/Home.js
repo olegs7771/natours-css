@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "../../img/logo-white.png";
+import logo_big_X2 from "../../img/logo-green-small-2x.png";
 import nat_1_lg_img from "../../img/nat-1-large.jpg";
 import nat_2_lg_img from "../../img/nat-2-large.jpg";
 import nat_3_lg_img from "../../img/nat-3-large.jpg";
@@ -386,11 +387,57 @@ class Home extends Component {
                       </label>
                     </div>
                   </div>
+                  <div className="form-group">
+                    <div className=" u-margin-top-big">
+                      <button type="submit" className="btn btn--green">
+                        Next step &rarr;
+                      </button>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
           </section>
         </main>
+        <footer className="footer">
+          <div className="footer__logo-box">
+            <img src={logo_big_X2} alt="logo" className="footer__logo" />
+          </div>
+          <div className="row">
+            <div className="col-1-of2">
+              <div className="footer__navigation">
+                <ul className="footer__list">
+                  <li className="footer__item">
+                    <a href="#" className="footer_link">
+                      Company
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer_link">
+                      Contacts
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer_link">
+                      Careers
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer_link">
+                      Privacy policy
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer_link">
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-1-of2"></div>
+          </div>
+        </footer>
 
         {/* <section className="grid-test">
           <div className="row">
