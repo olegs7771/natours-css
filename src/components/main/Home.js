@@ -435,7 +435,18 @@ class Home extends Component {
                 </ul>
               </div>
             </div>
-            <div className="col-1-of2"></div>
+            <div className="col-1-of2">
+              <p className="footer__copyright">
+                Built by{" "}
+                <a href="#" className="footer__link">
+                  Oleg Smushkevich
+                </a>{" "}
+                to be included in the main Portfolio{" "}
+                <a href="#" className="footer__link">
+                  Main Portfolio
+                </a>
+              </p>
+            </div>
           </div>
         </footer>
 
