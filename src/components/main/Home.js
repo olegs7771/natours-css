@@ -13,6 +13,46 @@ class Home extends Component {
   render() {
     return (
       <div>
+        <div className="navigation">
+          <input
+            type="checkbox"
+            className="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label htmlFor="navi-toggle" className="navigation__button">
+            Menu
+          </label>
+          <div className="navigation__background">&nbsp;</div>
+          <nav className="navigation__nav">
+            <ul className="navigation__list">
+              <li className="navigation__item">
+                <a href="#" className="navigation__link">
+                  About Natours
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#" className="navigation__link">
+                  Your benefits
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#" className="navigation__link">
+                  Popular Tours
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#" className="navigation__link">
+                  Stories
+                </a>
+              </li>
+              <li className="navigation__item">
+                <a href="#" className="navigation__link">
+                  Book now
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <header className="header">
           <div className="header__logo-box">
             <img src={logo} alt="Logo" className="header__logo" />
@@ -441,13 +481,14 @@ class Home extends Component {
                 <a href="#" className="footer__link">
                   Oleg Smushkevich.
                 </a>{" "}
-                To be included in the {" "}
+                To be included in the{" "}
                 <a href="#" className="footer__link">
                   Main Portfolio
-                </a>. 
-                <br/>
-                <br/>
-             Copyright &copy; by Oleg Smushkevich
+                </a>
+                .
+                <br />
+                <br />
+                Copyright &copy; by Oleg Smushkevich
               </p>
             </div>
           </div>
