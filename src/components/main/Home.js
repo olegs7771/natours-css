@@ -6,6 +6,7 @@ import nat_2_lg_img from "../../img/nat-2-large.jpg";
 import nat_3_lg_img from "../../img/nat-3-large.jpg";
 import nat_8_person_img from "../../img/nat-8.jpg";
 import nat_9_person_img from "../../img/nat-9.jpg";
+
 import bg_video_pm4 from "../../video/video.mp4";
 // import bg_video_webm from "../../video/video.webm";
 
@@ -493,6 +494,46 @@ class Home extends Component {
             </div>
           </div>
         </footer>
+        {/* POPUP of CARD */}
+        <div className="popup">
+          <div className="popup__content">
+            <div className="popup__left">
+              <img
+                src={nat_8_person_img}
+                alt="tour image"
+                className="popup__img"
+              />
+              <img
+                src={nat_9_person_img}
+                alt="tour image"
+                className="popup__img"
+              />
+            </div>
+            <div className="popup__right">
+              <h2 className="heading-secondary u-margin-bottom-medium">
+                Start booking now
+              </h2>
+              <h3 className="heading-tertiary u-margin-bottom-small">
+                Important &ndash; Please read these terms before booking
+              </h3>
+              <p className="popup__text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolores culpa ad optio magni illum fugit, accusamus distinctio
+                harum blanditiis nihil iste voluptates perferendis error veniam
+                voluptate vero, autem officia libero numquam quasi possimus amet
+                doloribus et. Molestias quo maiores, repellendus eveniet beatae,
+                officia consequatur quis magnam, commodi fuga laudantium vitae!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dolores culpa ad optio magni illum fugit, accusamus distinctio
+                harum blanditiis nihil iste voluptates perferendis error veniam
+                voluptate vero, autem officia libero numquam quasi possimus amet
+                doloribus et. Molestias quo maiores, repellendus eveniet beatae,
+                officia consequatur quis magnam, commodi fuga laudantium vitae!
+              </p>
+              <div className="btn btn--green">Book now</div>
+            </div>
+          </div>
+        </div>
 
         {/* <section className="grid-test">
           <div className="row">
