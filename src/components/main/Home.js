@@ -208,7 +208,7 @@ class Home extends Component {
                         <p className="card__price-only">Only</p>
                         <p className="card__price-value">$297</p>
                       </div>
-                      <a href="#" className="btn btn--white">
+                      <a href="#popup" className="btn btn--white">
                         book now!
                       </a>
                     </div>
@@ -242,7 +242,7 @@ class Home extends Component {
                         <p className="card__price-only">Only</p>
                         <p className="card__price-value">$297</p>
                       </div>
-                      <a href="#" className="btn btn--white">
+                      <a href="#popup" className="btn btn--white">
                         book now!
                       </a>
                     </div>
@@ -276,7 +276,7 @@ class Home extends Component {
                         <p className="card__price-only">Only</p>
                         <p className="card__price-value">$297</p>
                       </div>
-                      <a href="#" className="btn btn--white">
+                      <a href="#popup" className="btn btn--white">
                         book now!
                       </a>
                     </div>
@@ -495,21 +495,22 @@ class Home extends Component {
           </div>
         </footer>
         {/* POPUP of CARD */}
-        <div className="popup">
+        <div className="popup" id="popup">
           <div className="popup__content">
             <div className="popup__left">
               <img
                 src={nat_8_person_img}
-                alt="tour image"
+                alt="tour pic "
                 className="popup__img"
               />
               <img
                 src={nat_9_person_img}
-                alt="tour image"
+                alt="tour pic"
                 className="popup__img"
               />
             </div>
             <div className="popup__right">
+              <a href="#section-tours" className="popup__close">&times;</a>
               <h2 className="heading-secondary u-margin-bottom-medium">
                 Start booking now
               </h2>

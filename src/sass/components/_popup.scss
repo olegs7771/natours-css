@@ -6,6 +6,9 @@
   top: 0;
   left: 0;
   z-index: 2500;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 
   &__content {
     @include position-center;
@@ -15,6 +18,9 @@
     border-radius: 3px;
     display: table;
     overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.2s 0.3s;
   }
   &__left {
     width: 33.333333%;
@@ -39,5 +45,32 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-dark-2;
     hyphens: auto;
+  }
+  // STYLE POPUP WHILE OPEN
+  &:target &__content {
+    opacity: 1;
+    @include position-center;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  // CLOSE POPUP
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark-3;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 3rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    &:hover {
+      color: $color-primary;
+    }
   }
 }
