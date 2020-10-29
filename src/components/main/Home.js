@@ -510,7 +510,7 @@ class Home extends Component {
               />
             </div>
             <div className="popup__right">
-              <a href="#section-tours" className="popup__close">&times;</a>
+              <a href="#section-tours" className="popup__close"><ion-icon name="moon-outline"></ion-icon></a>
               <h2 className="heading-secondary u-margin-bottom-medium">
                 Start booking now
               </h2>
