@@ -201,4 +201,80 @@
   &:hover &__side--back {
     transform: rotateY(0);
   }
+
+  //////PHONE VIEW : 📱 //////////////////////////////////////////////////////////////////
+
+  @include respond(tab-port) {
+    //BACKSIDE OF THE CARD
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0); //50% of element
+      height: 30rem;
+
+      width: 100%;
+      text-align: center;
+    }
+    &__price-box {
+      text-align: center;
+      color: $color-white;
+      margin-bottom: 8rem;
+    }
+    &__price-only {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      margin-bottom: 7rem;
+    }
+    &__price-value {
+      font-size: 6rem;
+      font-weight: 100;
+      margin-bottom: 10rem;
+    }
+    &__details {
+      padding-top: 4rem;
+      line-height: 1.5;
+      ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+        li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem;
+
+          &:not(:last-child) {
+            border-bottom: 0.5px solid $color-grey-light;
+          }
+        }
+      }
+    }
+
+    ///////////////////////////////////////////////////////////////
+
+    // CARD FUNCTIONALITY
+    height: auto;
+
+    // position: relative;
+    &__side {
+      height: auto;
+      border-radius: 3px;
+      overflow: hidden;
+      background-color: orangered;
+      position: relative;
+
+      width: 100%;
+
+      &--front {
+        background-color: $color-white;
+      }
+      &--back {
+        //already rotated 180deg
+        transform: rotateY(0);
+      }
+    }
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+  }
 }
