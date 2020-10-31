@@ -3,9 +3,17 @@
 }
 .u-margin-bottom-big {
   margin-bottom: 8rem;
+  @include respond(tab-port) {
+    margin-bottom: 2rem;
+  }
 }
 .u-margin-top-big {
   margin-top: 7rem;
+  @include respond(tab-port) {
+    @include respond(tab-port) {
+      margin-top: 0;
+    }
+  }
 }
 .u-margin-top-medium {
   margin-top: 4rem;

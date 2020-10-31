@@ -10,17 +10,32 @@
     outline-offset: 2rem;
 
     &--p1 {
-      top: -10px;
-      left: 0px;
+      top: 0rem;
+      left: 0;
+      ////
+      @include respond(tab-port) {
+        top: -1.5rem;
+        left: -0.1rem;
+      }
     }
 
     &--p2 {
-      top: 3rem;
-      left: 18rem;
+      top: 13rem;
+      left: 6rem;
+      ////////
+      @include respond(tab-port) {
+        top: 2rem;
+        left: 10rem;
+      }
     }
     &--p3 {
-      top: 12rem;
-      left: 7rem;
+      top: 3rem;
+      left: 20rem;
+      ////
+      @include respond(tab-port) {
+        top: 7rem;
+        left: 23rem;
+      }
     }
     &--p1:hover {
       outline: 1.5rem solid $color-primary;

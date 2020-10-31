@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../../img/logo-white.png";
-import logo_big_X2 from "../../img/logo-green-small-2x.png";
+import logo_big_X2 from "../../img/logo-green-2x.png";
 import nat_1_lg_img from "../../img/nat-1-large.jpg";
 import nat_2_lg_img from "../../img/nat-2-large.jpg";
 import nat_3_lg_img from "../../img/nat-3-large.jpg";
@@ -510,7 +510,9 @@ class Home extends Component {
               />
             </div>
             <div className="popup__right">
-              <a href="#section-tours" className="popup__close"><ion-icon name="moon-outline"></ion-icon></a>
+              <a href="#section-tours" className="popup__close">
+                <ion-icon name="moon-outline"></ion-icon>
+              </a>
               <h2 className="heading-secondary u-margin-bottom-medium">
                 Start booking now
               </h2>
