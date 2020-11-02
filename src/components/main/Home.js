@@ -1,16 +1,28 @@
 import React, { Component } from "react";
 import logo from "../../img/logo-white.png";
 import logo_big_X2 from "../../img/logo-green-2x.png";
+import logo_big_X1 from "../../img/logo-green-1x.png";
 import nat_1_lg_img from "../../img/nat-1-large.jpg";
+import nat_1_sm_img from "../../img/nat-1.jpg";
 import nat_2_lg_img from "../../img/nat-2-large.jpg";
+import nat_2_sm_img from "../../img/nat-2.jpg";
 import nat_3_lg_img from "../../img/nat-3-large.jpg";
+import nat_3_sm_img from "../../img/nat-3.jpg";
 import nat_8_person_img from "../../img/nat-8.jpg";
 import nat_9_person_img from "../../img/nat-9.jpg";
 
 import bg_video_pm4 from "../../video/video.mp4";
-// import bg_video_webm from "../../video/video.webm";
+import MediaQuery from "react-responsive";
 
 class Home extends Component {
+  state = { currentSrc: "" };
+  onLoad = (event) => {
+    this.setState({
+      currentSrc: event.target.currentSrc,
+    });
+    console.log("event.target", event.target.currentSrc);
+  };
+
   render() {
     return (
       <div>
@@ -102,22 +114,43 @@ class Home extends Component {
                 </a>
               </div>
               <div className="col-1-of-2 ">
+                <h1> Image:{this.state.currentSrc}</h1>
+
                 <div className="composition">
-                  <img
-                    src={nat_1_lg_img}
-                    alt="nat-1"
-                    className="composition__photo composition__photo--p1"
-                  />
-                  <img
-                    src={nat_2_lg_img}
-                    alt="nat-2"
-                    className="composition__photo composition__photo--p2"
-                  />
-                  <img
-                    src={nat_3_lg_img}
-                    alt="nat-3"
-                    className="composition__photo composition__photo--p3"
-                  />
+                  <MediaQuery maxDeviceWidth={400}>
+                    <img
+                      src={nat_1_sm_img}
+                      alt="nat small"
+                      className="composition__photo composition__photo--p1"
+                    />
+                    <img
+                      src={nat_2_sm_img}
+                      alt="nat small"
+                      className="composition__photo composition__photo--p2"
+                    />
+                    <img
+                      src={nat_3_sm_img}
+                      alt="nat small"
+                      className="composition__photo composition__photo--p3"
+                    />
+                  </MediaQuery>
+                  <MediaQuery minDeviceWidth={401}>
+                    <img
+                      src={nat_1_lg_img}
+                      alt="nat lg"
+                      className="composition__photo composition__photo--p1"
+                    />
+                    <img
+                      src={nat_2_lg_img}
+                      alt="nat lg"
+                      className="composition__photo composition__photo--p2"
+                    />
+                    <img
+                      src={nat_3_lg_img}
+                      alt="nat lg"
+                      className="composition__photo composition__photo--p3"
+                    />
+                  </MediaQuery>
                 </div>
               </div>
             </div>
@@ -442,8 +475,15 @@ class Home extends Component {
         </main>
         <footer className="footer">
           <div className="footer__logo-box">
-            <img src={logo_big_X2} alt="logo" className="footer__logo" />
+            <img
+              src={logo_big_X1}
+              srcSet={`${logo_big_X1} 600w,${logo_big_X2} 1200w `}
+              alt="logo"
+              className="footer__logo"
+              // onLoad={this.onLoad}
+            />
           </div>
+
           <div className="row">
             <div className="col-1-of-2">
               <div className="footer__navigation">
