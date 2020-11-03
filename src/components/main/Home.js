@@ -114,8 +114,6 @@ class Home extends Component {
                 </a>
               </div>
               <div className="col-1-of-2 ">
-                <h1> Image:{this.state.currentSrc}</h1>
-
                 <div className="composition">
                   <MediaQuery maxDeviceWidth={400}>
                     <img
