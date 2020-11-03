@@ -63,6 +63,10 @@ body {
     text-shadow: 5px 10px 13px rgba(38, 16, 10, 0.5);
   }
 
+  @include respond(tab-land) {
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+  }
   @include respond(tab-port) {
     letter-spacing: 0.2rem;
     font-size: 3rem;
