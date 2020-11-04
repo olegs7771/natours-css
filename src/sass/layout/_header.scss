@@ -21,6 +21,16 @@
       url(../../img/hero.jpg);
   }
 
+  // RESOLUTION MEDIA
+  @media (min-resolution: 192dpi) and(min-width:37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+        to left top,
+        rgba($color-primary-light, 0.712),
+        rgba($color-primary-dark, 0.712)
+      ),
+      url(../../img/hero.jpg);
+  }
+
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 92%);
     clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 92%);
