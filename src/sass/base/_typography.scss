@@ -10,6 +10,10 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
+
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
   &--main {
     display: block;
     font-size: 6rem;

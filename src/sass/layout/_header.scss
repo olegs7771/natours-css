@@ -1,6 +1,6 @@
 .header {
   line-height: 6rem;
-  height: 60vh;
+  height: 85vh;
   background-image: linear-gradient(
       to left top,
       rgba($color-primary-light, 0.712),
@@ -10,19 +10,17 @@
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
-  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
-    background-image: linear-gradient(
-        to left top,
-        rgba($color-secondary-light, 0.712),
-        rgba($color-secondary-dark, 0.712)
-      ),
-      url(../../img/hero.jpg);
+
+  @supports ((clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0))) {
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 90%);
   }
 
   // RESOLUTION MEDIA
-  @media (min-resolution: 192dpi) and(min-width:37.5em), (min-width: 125em) {
+  @media (min-resolution: 1100dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
     background-image: linear-gradient(
         to left top,
         rgba($color-primary-light, 0.712),
@@ -31,9 +29,18 @@
       url(../../img/hero.jpg);
   }
 
+  @include respond(tab-land) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 80%);
+  }
+  @include respond(tab-port) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 62%);
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 62%);
+  }
   @include respond(phone) {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 92%);
-    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 92%);
+    height: 75vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 50%);
   }
   padding: 2em;
   &__logo-box {
@@ -52,5 +59,9 @@
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      top: 28%;
+    }
   }
 }

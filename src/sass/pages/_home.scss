@@ -1,7 +1,7 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 35rem 0;
-  margin-top: -20vh;
+  margin-top: -50vh;
 
   @include respond(tab-port) {
     padding: 20rem 0 20rem 0;
@@ -18,8 +18,7 @@
       rgba($color-primary-light, 0.712),
       rgba($color-primary-dark, 0.712)
     ),
-    url(../../img/nat-4.jpg);
-
+    url(../../img/nat-4-small.jpg);
   background-position: top;
   position: relative;
   // clip-path: polygon(0 20vh, 100% 0, 100% 75vh, 0 100%);
@@ -28,6 +27,18 @@
     //skew only direct child > (row)
     transform: skewY(7deg);
   }
+
+  @media (min-resolution: 192dpi) and(min-width:37.5em),
+    (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
+    background-image: linear-gradient(
+        to left top,
+        rgba($color-primary-light, 0.712),
+        rgba($color-primary-dark, 0.712)
+      ),
+      url(../../img/nat-4.jpg);
+  }
+
   @include respond(tab-port) {
     padding: 8rem 0;
   }

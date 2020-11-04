@@ -1,5 +1,4 @@
 .feature-box {
-  height: 46vh;
   background-color: rgba($color: $color-white, $alpha: 0.8);
   font-size: 1.6rem;
   padding: 2.5rem;
@@ -10,11 +9,6 @@
   transition: 0.3s;
   @include respond(tab-land) {
     padding: 2rem;
-<<<<<<< HEAD
-    height: 46vh;
-=======
-    height: 30vh;
->>>>>>> 8e9a5634bb18beba81267584119fc59df0cf0619
   }
   @include respond(tab-port) {
     padding: 3.5rem;
@@ -41,6 +35,11 @@
     }
   }
 
+  &__heading {
+    @include respond(tab-land) {
+      font-size: 1.4;
+    }
+  }
   &__heading {
     @include respond(phone) {
       font-size: 3rem;

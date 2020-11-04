@@ -19,15 +19,26 @@
   }
 
   &__shape {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
     float: left;
     shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
+
+    // clip-path: circle(50% at 50% 50%);
+    // -webkit-clip-path: circle(50% at 50% 50%);
     transform: translate(-2rem) skewX(12deg);
     position: relative;
     overflow: hidden;
     backface-visibility: hidden;
+
+    @supports ((clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0))) {
+      width: 12rem;
+      height: 12rem;
+      margin-right: 0rem;
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);
+    }
 
     @include respond(tab-port) {
       margin-right: 2rem;
